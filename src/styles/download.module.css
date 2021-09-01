@@ -17,6 +17,7 @@
 }
 .images {
   margin: 0;
+  height: 400px;
   
 }
 .circle {
@@ -43,9 +44,8 @@
   top: -70px;
 }
 .buttondiv {
-  position: relative;
   text-align: center;
-  top: -455px;
+ 
 }
 .button1 {
   margin: 0 10px;
@@ -71,9 +71,7 @@
   font-size: 15px;
 }
 .store {
-  position: relative;
   text-align: center;
-  top: -380px;
 }
 .storep {
   padding: 10px;
@@ -87,6 +85,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+.images{
+  height: 505px;
+}
   .circle {
     width: 150px;
     top: 98px;
@@ -102,14 +103,8 @@
     left: 285px;
     top: 95px;
   }
-  .buttondiv {
-    top: 40px;
-  }
   .windows {
     margin: 10px 310px;
-  }
-  .store {
-    top: 103px;
   }
 }
 
@@ -123,6 +118,7 @@
   }
   .images {
     margin: 10px 50px 10px 250px;
+    height: 600px;
   }
   .circle {
     position: absolute;
@@ -148,8 +144,6 @@
     z-index: 2;
   }
   .buttondiv {
-    position: relative;
-    top: -325px;
     text-align: center;
   }
   .button1 {
@@ -176,8 +170,6 @@
     font-size: 18px;
   }
   .store {
-    position: relative;
-    top: -200px;
     text-align: center;
   }
   .storep {
