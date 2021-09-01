@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Download from './pages/download'
-import './styles/globals.css'
+import './styles/global.css'
 
 const App = () => {
   return (
