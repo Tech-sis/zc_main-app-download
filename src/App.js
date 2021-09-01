@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Download from './pages/download'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Download from './pages/download';
 import './styles/global.css'
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/app-download">
+          <Route path="/">
             <Download />
           </Route>
         </Switch>
