@@ -47,11 +47,14 @@ const download = () => {
             </p>
           </div>
           <div className={styles.storelink}>
-            <a href="#" className={styles.imgLink} >
+            <a href="https://play.google.com/" className={styles.imgLink}>
               <img src="/Play_Store_badge.svg" alt="Google Play Store"></img>
             </a>
 
-            <a href="#" className={styles.imgLink} >
+            <a
+              href="https://www.apple.com/app-store/"
+              className={styles.imgLink}
+            >
               <img src="/App_Store_badge.svg" alt="Apple App Store"></img>
             </a>
           </div>
