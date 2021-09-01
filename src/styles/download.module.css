@@ -72,6 +72,7 @@
 }
 .store {
   text-align: center;
+  margin-top: 50px;
 }
 .storep {
   padding: 10px;
@@ -105,6 +106,9 @@
   }
   .windows {
     margin: 10px 310px;
+  }
+  .store{
+    margin-top: 70px;
   }
 }
 
@@ -171,6 +175,7 @@
   }
   .store {
     text-align: center;
+    margin-top: 100px;
   }
   .storep {
     padding: 10px;
