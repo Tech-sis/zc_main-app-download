@@ -1,13 +1,16 @@
 import React from 'react'
-import styles from '../styles/download.module.css'
+import Footer from '../../components/externalPagesComponents/Footer/Footer'
+import styles from '../download/styles/download.module.css'
+import SearchSuggestion from '../searchSuggestion'
 
-const download = () => {
+const Download = () => {
   return (
     <>
+      <SearchSuggestion />
       <section>
-        <div className={`${styles.container} container`}>
+        <div className={`${styles.container} container p-3 mb-4`}>
           <h1 className={styles.h1}>Zuri Chat Download</h1>
-          <a href="#" className={styles.link}>
+          <a href="/news" className={styles.link}>
             What's New
           </a>
         </div>
@@ -29,39 +32,55 @@ const download = () => {
           ></img>
         </div>
         <div className={styles.buttondiv}>
-          <button className={styles.button1} type="submit">
+          <a
+            href="https://drive.google.com/file/d/1C5s3Hm44shxtIJ6XElV3lqBk1XLAbrMm/view?usp=drivesdk"
+            className={styles.button1}
+            type="submit"
+          >
             Download for Windows (64bits)
-          </button>
-          <button className={styles.button2} type="submit">
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1C5s3Hm44shxtIJ6XElV3lqBk1XLAbrMm/view?usp=drivesdk"
+            className={styles.button2}
+            type="submit"
+          >
             Download for Mac OS X 10.10 and higher
-          </button>
+          </a>
           <p className={styles.windows}>Available on windows 8 and higher</p>
         </div>
       </section>
-      <section className={`container`}>
-        <div className={styles.store}>
+      <section className={`container mb-5 `}>
+        <div className={`${styles.store}`}>
           <div>
             <h1 className={styles.h1}>Zuri Chat for Mobile</h1>
             <p className={styles.storep}>
               Keep up with your team and hold meetings from your device
             </p>
           </div>
-          <div className={styles.storelink}>
-            <a href="https://play.google.com/" className={styles.imgLink}>
-              <img src="/Play_Store_badge.svg" alt="Google Play Store"></img>
+          <div className={`${styles.storelink} m-lg-5`}>
+            <a className={`${styles.imgLink}`} href="https://play.google.com/">
+              <img
+                className={`${styles.badge}`}
+                src="/Play_Store_badge.svg"
+                alt="Google Play Store"
+              ></img>
             </a>
 
             <a
-              href="https://www.apple.com/app-store/"
               className={styles.imgLink}
+              href="https://www.apple.com/app-store/"
             >
-              <img src="/App_Store_badge.svg" alt="Apple App Store"></img>
+              <img
+                className={`${styles.badge}`}
+                src="/App_Store_badge.svg"
+                alt="Apple App Store"
+              ></img>
             </a>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   )
 }
-
-export default download
+export default Download
